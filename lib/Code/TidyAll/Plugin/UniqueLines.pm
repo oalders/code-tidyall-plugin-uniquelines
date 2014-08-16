@@ -1,6 +1,8 @@
 use strict;
 use warnings;
 
+use 5.006;
+
 package Code::TidyAll::Plugin::UniqueLines;
 
 use Moo;
@@ -17,11 +19,9 @@ sub transform_source {
 1;
 __END__
 
+# ABSTRACT: Remove duplicate lines from a file
+
 =pod
-
-=head1 NAME
-
-Code::TidyAll::Plugin::UniqueLines - remove duplicate lines from a file
 
 =head1 SYNOPSIS
 
