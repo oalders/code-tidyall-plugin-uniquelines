@@ -8,7 +8,7 @@ package Code::TidyAll::Plugin::UniqueLines;
 use Moo;
 extends 'Code::TidyAll::Plugin';
 
-use List::Uniq qw( uniq );
+use List::Util 1.45 qw( uniq );
 
 sub transform_source {
     my ( $self, $source ) = @_;
