@@ -13,7 +13,7 @@ use List::Util 1.45 qw( uniq );
 sub transform_source {
     my ( $self, $source ) = @_;
 
-    return join( "\n", uniq( grep {/\S/} split( /\n/, $source ) ) ) . "\n";
+    return join( "\n", uniq( grep { /\S/ } split( /\n/, $source ) ) ) . "\n";
 }
 
 1;
